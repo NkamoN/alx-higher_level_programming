@@ -1,16 +1,17 @@
 #!/usr/bin/python3
-def search_replace(my_list, search, replace):
-    """
-    Replaces all occurrences of an element in a new list.
+
+def safe_print_integer(value):
+    """Print an integer with "{:d}".format().
 
     Args:
-        my_list (list): The original list.
-        search: The element to replace in the list.
-        replace: The new element.
+        value (int): The integer to print.
 
     Returns:
-        list: A new list with all occurrences of `search`
-        replaced by `replace`.
+        If a TypeError or ValueError occurs - False.
+        Otherwise - True.
     """
-    new_list = list(map(lambda x: replace if x == search else x, my_list))
-    return new_list
+    try:
+        print("{:d}".format(value))
+        return (True)
+    except (TypeError, ValueError):
+        return (False)

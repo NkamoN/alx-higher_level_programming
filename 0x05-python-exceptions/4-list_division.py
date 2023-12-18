@@ -1,7 +1,18 @@
 #!/usr/bin/python3
-only_diff_elements = __import__('4-only_diff_elements').only_diff_elements
-
-set_1 = { "Python", "C", "Javascript" }
-set_2 = { "Bash", "C", "Ruby", "Perl" }
-od_set = only_diff_elements(set_1, set_2)
-print(sorted(list(od_set)))
+def list_division(my_list_1, my_list_2, list_length):
+    result_list = []
+    for element in range(0, list_length):
+        try:
+            result = my_list_1[element] / my_list_2[element]
+        except TypeError:
+            print("wrong type")
+            result = 0
+        except ZeroDivisionError:
+            print("division by 0")
+            result = 0
+        except IndexError:
+            print("out of range")
+            result = 0
+        finally:
+            result_list.append(result)
+    return result_list

@@ -1,13 +1,11 @@
 #!/usr/bin/python3
-def uniq_add(my_list=[]):
-    """Adds all unique integers in a list (only once for each integer)
-
-    Args:
-        my_list (list): The list of integers to add.
-
-    Returns:
-        int: The sum of all unique integers in the list.
-
-    """
-    uniq_integers = set(my_list)
-    return sum(uniq_integers)
+def safe_print_list_integers(my_list=[], x=0):
+    element_count = 0
+    for element in range(x):
+        try:
+            print("{:d}".format(my_list[element]), end="")
+            element_count += 1
+        except (TypeError, ValueError):
+            pass
+    print()
+    return element_count
