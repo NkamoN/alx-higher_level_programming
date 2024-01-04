@@ -1,8 +1,10 @@
 #!/usr/bin/python3
-"""This is a Rectangle class"""
+"""0-rectangle, built for Holberton project 0x08 task 0.
+"""
 
 
 class Rectangle:
-    """Represent a rectangle."""
+    """Empty class per task instructions, will be built upon in later tasks.
+    """
     pass
 
