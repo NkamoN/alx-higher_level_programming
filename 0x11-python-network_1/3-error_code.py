@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-request a body if error display statue code
+Take in a url,sends a request to the URL and displays the body of the response 
+
 """
 
 if __name__ == '__main__':
