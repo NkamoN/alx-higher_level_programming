@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-sends a request to the URL and displays the body 
+same as 3-error_code with requests model
 """
 
 if __name__ == '__main__':
