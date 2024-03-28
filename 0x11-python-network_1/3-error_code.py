@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
-Take in a url,sends a request to the URL and displays the body of the response 
-
+Take in a url,sends a request to the URL  
 """
 
 if __name__ == '__main__':
